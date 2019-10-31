@@ -12,7 +12,7 @@ const Movie = (props) => {
    axios
         .get(`http://localhost:5000/api/movies/${id}`)
         .then(response => {
-          console.log(response)
+          
           setMovie(response.data);
         })
         .catch(error => {
@@ -43,8 +43,8 @@ const Movie = (props) => {
           Metascore: <strong>{metascore}</strong>
         </div>
         <h3>Actors</h3>
-        {stars}
-        
+            {stars}
+       
       </div>
       <div className="save-button">Save</div>
     </div>

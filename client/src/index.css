@@ -14,6 +14,23 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+  width: 75%;
+}
+.movie-card:hover{
+  background-color:gold;
+}
+
+.movie-card a{
+  text-decoration: none;
+  border: solid grey 1px;
+  padding: 10px;
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 10px;
+}
+.movie-card a:hover{
+  background-color: lightseagreen;
+
 }
 
 .movie-director {
@@ -69,4 +86,12 @@ body {
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+  
+}
+.home-button a{
+  text-decoration: none;
+  color:white;
+}
+.home-button:hover{
+  background-color:green
 }
