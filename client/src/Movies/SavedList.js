@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink, Route} from "react-router-dom";
+import MovieList from "./MovieList"
 
 
 const SavedList = props => (
@@ -9,10 +10,14 @@ const SavedList = props => (
       <span className="saved-movie">{movie.title}</span>
     ))}
     <div className="home-button">
-     
-     <Link to="/">Home</Link>
-      
+     {/* NavLink is use to add additional styling using the 
+     bult in class*/}
+      <NavLink to="/" activeClassName="activeNavButton">
+            Home
+          </NavLink>
+                        
       </div>
+      
   </div>
 );
 
