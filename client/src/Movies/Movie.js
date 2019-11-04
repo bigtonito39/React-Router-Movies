@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import MovieCard from "./MovieCard"
+import SavedList from "./SavedList";
 
-const Movie = (props) => {
+
+export const Movie = (props) => {
   console.log(props)
   const [movie, setMovie] = useState({});
  
@@ -27,7 +28,7 @@ const Movie = (props) => {
   // const saveMovie = () => {
   //   const addToSavedList = props.addToSavedList;
   //   addToSavedList(movie)
-  // }
+ 
 
   if (!movie) {
     return <div>Loading movie information...</div>;
@@ -36,7 +37,7 @@ const Movie = (props) => {
   const { title, director, metascore, stars } = movie;
   return (
     <div className="movie-card">
-   
+    <button onClick={SavedList}>Save Movie</button> 
          <h2>{title}</h2>
          
          <div className="movie-director">

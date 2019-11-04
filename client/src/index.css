@@ -96,3 +96,12 @@ body {
 .home-button:hover{
   background-color:green
 }
+.movie-card button{
+  background-color:lightskyblue;
+  color:white;
+  padding:5px 10px;
+  border:none;
+}
+.movie-card button:hover{
+  background-color:green
+}
